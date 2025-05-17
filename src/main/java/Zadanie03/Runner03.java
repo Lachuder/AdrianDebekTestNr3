@@ -21,11 +21,11 @@ public class Runner03 {
 
         List <Integer> intidzery = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
-
-        MinMaxService.getMinAndMax(employees);
-        MinMaxService.getMinAndMax(stringi);
-        MinMaxService.getMinAndMax(intidzery);
-
+        MinMax<Employee> employeeMinMax = MinMaxService.getMinAndMax(employees);
+        MinMax<String> stringMinMax = MinMaxService.getMinAndMax(stringi);
+        System.out.println("stringMinMax.getMax() = " + stringMinMax.getMax());
+        System.out.println("stringMinMax.getMin() = " + stringMinMax.getMin());
+        MinMax<Integer> integerMinMax = MinMaxService.getMinAndMax(intidzery);
 
     }
 

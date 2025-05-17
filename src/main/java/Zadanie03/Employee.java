@@ -63,7 +63,6 @@ public class Employee implements Comparable<Employee> {
                 '}';
     }
 
-
     @Override
     public int compareTo(Employee o) {
         int result = lastName.compareTo(o.lastName);

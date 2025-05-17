@@ -36,11 +36,12 @@ public class Szafa implements Iterable<Ubranie> {
     }
 
     public List<Ubranie> getUbrania() {
-        List<Ubranie> result = new ArrayList<>();
+        List<Ubranie> result = Collections.emptyList();
         try (
                 FileReader fr = new FileReader(FILE_NAME);
                 BufferedReader br = new BufferedReader(fr);
                 ) {
+            result = new ArrayList<>();
             String line;
             while ((line = br.readLine()) != null) {
                 result.add(getObiektUbranieNaDanychZPliku(line));

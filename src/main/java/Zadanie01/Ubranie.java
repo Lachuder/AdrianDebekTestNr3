@@ -13,6 +13,10 @@ public class Ubranie implements Comparable<Ubranie> {
         this.cena = cena;
     }
 
+    public static Kryterium getKryterium() {
+        return kryterium;
+    }
+
     public static void ustalKryteriumSortowania(Kryterium nowe) {
         kryterium = nowe;
     }

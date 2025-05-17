@@ -5,6 +5,9 @@ public class MinMax<T extends Comparable<T>> {
     private T max;
     private T min;
 
+    public MinMax() {
+    }
+
     public MinMax(T max, T min) {
         this.max = max;
         this.min = min;
@@ -13,7 +16,6 @@ public class MinMax<T extends Comparable<T>> {
     public T getMax() {
         return max;
     }
-
     public T getMin() {
         return min;
     }

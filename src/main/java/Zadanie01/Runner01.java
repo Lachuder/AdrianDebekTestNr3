@@ -20,7 +20,6 @@ public class Runner01 {
         szafa.dodajUbranie(u1, u2, u3);
 
         for(Ubranie u : szafa) {
-            System.out.println("u = " + u);
         }
 
         Ubranie najwieksze = Collections.max(szafa.getUbrania());
