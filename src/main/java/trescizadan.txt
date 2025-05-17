@@ -1,18 +1,18 @@
 Zadanie 01:
-Stworz klase Szafa, do ktorej mozesz dodawac roznego rodzaju ubrania (koszule, jeasnsy, majtki itp)
+Stworz klase Zadanie01.Szafa, do ktorej mozesz dodawac roznego rodzaju ubrania (koszule, jeasnsy, majtki itp)
 kazde ubranie ma nazwe, rozmiar, cene,
 
 ma dzialac taki kod:
-Szafa szafa = new Szafa(...);
+Zadanie01.Szafa szafa = new Zadanie01.Szafa(...);
 szafa.dodajUbranie(...);
 szafa.dodajUbranie(u1, u2);
 szafa.dodajUbranie(u1, u2, u3); // mozna podac dowolna ilosc ubran w metodzie dodawania.
 
-for(Ubranie u : szafa){ iteruje po wszystkich ubraniach w szafie }
+for(Zadanie01.Ubranie u : szafa){ iteruje po wszystkich ubraniach w szafie }
 
-Ubranie najwieksze = Collections.max(szafa.getUbrania()); // ma zwrocic najwieksze ubranie
-Ubranie.ustalKryteriumSortowania(Kryterium.WARTOSC);
-Ubranie najdrozsze = Collections.max(szafa.getUbrania()) // teraz po zmianie kryterium sotowania ma zwrocic najdrozsze ubranie.
+Zadanie01.Ubranie najwieksze = Collections.max(szafa.getUbrania()); // ma zwrocic najwieksze ubranie
+Zadanie01.Ubranie.ustalKryteriumSortowania(Zadanie01.Kryterium.WARTOSC);
+Zadanie01.Ubranie najdrozsze = Collections.max(szafa.getUbrania()) // teraz po zmianie kryterium sotowania ma zwrocic najdrozsze ubranie.
 
 Stworz mozliwosc zapisania zawartosci szafy do pliku, oraz mozliwosc wczytania jej zawartosci z pliku.
 
