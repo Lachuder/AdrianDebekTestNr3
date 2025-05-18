@@ -5,7 +5,7 @@ import java.util.*;
 
 public class Szafa implements Iterable<Ubranie> {
 
-    private static String FILE_NAME = "szafa.txt";
+    private static final String FILE_NAME = "szafa.txt";
 
     public Szafa() {
         stworzPlikTekstowySzafa();

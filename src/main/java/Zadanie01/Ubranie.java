@@ -30,7 +30,7 @@ public class Ubranie implements Comparable<Ubranie> {
     public int compareTo(Ubranie o) {
         return switch (kryterium) {
             case ROZMIAR -> Integer.compare(this.rozmiar.ordinal(), o.rozmiar.ordinal());
-            case WARTOSC -> Integer.compare((int) this.cena, (int) o.cena);
+            case WARTOSC -> Double.compare(this.cena, o.cena);
         };
     }
 }
